@@ -38,6 +38,9 @@ export default {
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
   ],
+  tailwindcss: {
+    cssPath: '~/assets/scss/tailwind.scss'
+  },
   /*
   ** Nuxt.js modules
   */
