@@ -2,6 +2,5 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.container {
-    @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
+@import 'global/layout';
+@import 'components/buttons';
