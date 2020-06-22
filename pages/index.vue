@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <section class="min-h-screen flex items-center">
-        <h1 class="hero-title">Hi I'm Pau, a Full-stack Web Developer Freelance</h1>
+        <h1 class="hero-title">Hi I'm Pau, a Full-stack Web Developer</h1>
       </section>
 
       <Slide
@@ -14,7 +14,7 @@
         v-bind:small="slide.small"
       />
 
-      <section class="md:min-h-screen flex items-center">
+      <section class="md:min-h-screen flex items-center" data-aos="fade-up" data-aos-delay="200">
         <div>
           <h1>What's a Full Stack Web Developer</h1>
           <p class="md:ml-40">In my opinion, to be a Full-stack Web Developer means to be able to understand and manage 4 different areas of development:</p>
@@ -22,7 +22,7 @@
         </div>
       </section>
 
-      <section class="my-48 text-center">
+      <section class="my-48 text-center" data-aos="fade-up" data-aos-delay="200">
         <div class="links">
           <a
             href="https://www.linkedin.com/in/pau-penin/"
@@ -52,10 +52,16 @@
 import D3FullStack from '~/components/D3FullStack.vue'
 import Slide from '~/components/Slide.vue'
 
+import AOS from 'aos';
+
 export default {
   components: {
     Slide,
     D3FullStack
+  },
+
+  mounted() {
+    AOS.init();
   },
 
   data() {

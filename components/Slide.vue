@@ -1,5 +1,5 @@
 <template>
-  <section v-bind:class="classObject">
+  <section v-bind:class="classObject" data-aos="fade-up" data-aos-delay="200">
     <div class="2">
         <h1 v-if="title" class="Slide__title">{{ title }}</h1>
         <h2 v-if="subtitle" class="Slide__subtitle">{{ subtitle }}</h2>
