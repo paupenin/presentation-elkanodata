@@ -26,14 +26,18 @@ export default {
 
 <style>
 .Slide {
-  @apply min-h-screen flex items-center;
+  @apply flex items-center;
+
+  min-height: 50vh;
 }
 
 .Slide--is-small {
  min-height: 10vh;
 }
 
-.Slide__content {
+@screen md {
+  .Slide__content {
     @apply ml-40;
+  }
 }
 </style>

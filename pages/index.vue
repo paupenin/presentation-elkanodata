@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <section class="min-h-screen flex items-center">
-        <h1 style="font-size: 100px;">Hi I'm Pau, a Full-stack Web Developer Freelance</h1>
+        <h1 class="hero-title">Hi I'm Pau, a Full-stack Web Developer Freelance</h1>
       </section>
 
       <Slide
@@ -14,7 +14,13 @@
         v-bind:small="slide.small"
       />
 
-      <D3FullStack />
+      <section class="md:min-h-screen flex items-center">
+        <div>
+          <h1>What's a Full Stack Web Developer</h1>
+          <p class="md:ml-40">In my opinion, to be a Full-stack Web Developer means to be able to understand and manage 4 different areas of development:</p>
+          <D3FullStack />
+        </div>
+      </section>
 
       <section class="my-48 text-center">
         <div class="links">
@@ -22,19 +28,19 @@
             href="https://www.linkedin.com/in/pau-penin/"
             target="_blank"
             rel="noopener noreferrer"
-            class="button--green"
+            class="button--green w-full md:w-auto mb-2"
           >LinkedIn</a>
           <a
             href="https://github.com/paupenin/"
             target="_blank"
             rel="noopener noreferrer"
-            class="button--green"
+            class="button--green w-full md:w-auto mb-2"
           >GitHub</a>
           <a
             href="mailto:hi@paupenin.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="button--green"
+            class="button--green w-full md:w-auto mb-2"
           >Email</a>
         </div>
       </section>

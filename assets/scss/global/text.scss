@@ -19,6 +19,12 @@ h1 {
   letter-spacing: 1px;
 }
 
+.hero-title {
+  @screen md {
+    font-size: 100px;
+  }
+}
+
 h2 {
   font-weight: 300;
   font-size: 42px;

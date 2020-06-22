@@ -114,6 +114,7 @@ export default {
   animation: 1s appear;
   margin: auto;
   max-width: 100%;
+  max-height: 100vh;
 }
 
 @keyframes appear {
