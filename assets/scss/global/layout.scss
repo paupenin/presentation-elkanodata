@@ -17,6 +17,12 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  @apply p-4;
+
+  animation: 2s appear;
+}
+
 *,
 *::before,
 *::after {
@@ -25,5 +31,5 @@ html {
 }
 
 .container {
-    @apply min-h-screen flex justify-center items-center text-center mx-auto;
+  @apply min-h-screen flex justify-center items-center mx-auto;
 }
