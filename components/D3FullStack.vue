@@ -15,6 +15,15 @@
       v-bind:fill="shape.fill"
       v-bind:duration="shape.duration"
     />
+
+    <text v-for="(text, index) in texts"
+      :key="index"
+      v-bind:x="text.x"
+      v-bind:y="text.y" 
+      font-size="300px">
+      {{ text.content }}
+    </text>
+
   </svg>
 </template>
 
@@ -29,6 +38,33 @@ export default {
 
   data() {
     return {
+      'texts': [
+        {
+          'content': 'Front-end',
+          'x': 800,
+          'y': 1400,
+        },
+        {
+          'content': 'Back-end',
+          'x': 2600,
+          'y': 1400,
+        },
+        {
+          'content': 'Dev-ops',
+          'x': 2600,
+          'y': 3000,
+        },
+        {
+          'content': 'Analysis',
+          'x': 800,
+          'y': 3000,
+        },
+        {
+          'content': 'ME',
+          'x': 2000,
+          'y': 2200,
+        },
+      ],
       'shapes': [
         {
           'ref': "TR",
